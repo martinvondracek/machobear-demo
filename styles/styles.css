@@ -9,6 +9,42 @@ header .navbar {
   margin-bottom: 0;
   height: 120px; }
 
+.product .product-height {
+  height: 125vw; }
+  @media (min-width: 992px) {
+    .product .product-height {
+      height: 50vw; } }
+.product .product-left-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12%;
+  padding-right: 12%; }
+  @media (min-width: 992px) {
+    .product .product-left-holder {
+      padding-right: 0; } }
+  .product .product-left-holder .product-left-inner h2 {
+    font-size: 40px;
+    margin-bottom: 30px; }
+  .product .product-left-holder .product-left-inner p {
+    color: #b1b1b1;
+    font-size: 15px;
+    padding: 10px 0; }
+  .product .product-left-holder .product-left-inner .btn-product-download {
+    font-size: 17px;
+    padding: 30px 70px;
+    background-color: #eb6662;
+    border-radius: 46px;
+    color: #ffffff; }
+  @media (min-width: 992px) {
+    .product .product-left-holder .product-left-inner h2 {
+      font-size: 50px; }
+    .product .product-left-holder .product-left-inner p {
+      font-size: 25px;
+      padding: 25px 0; }
+    .product .product-left-holder .product-left-inner .btn-product-download {
+      margin-top: 19px; } }
+
 .works .works-title {
   position: relative; }
   .works .works-title h2 {

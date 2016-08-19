@@ -8,6 +8,11 @@ img {
     }
 }
 
+// product
+$product-btn-bg-color: #eb6662;
+$product-btn-text-color: #ffffff;
+$product-text-color: #b1b1b1;
+
 // about
 $about-bg-color: #0889ff;
 $about-text-color: #ffffff;
@@ -21,6 +26,64 @@ header {
     .navbar {
         margin-bottom: 0;
         height: 120px;
+    }
+}
+
+.product {
+    .product-height {
+        height: 125vw;
+
+        @media (min-width: 992px) {
+            height: 50vw;
+        }
+    }
+
+    .product-left-holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 12%;
+        padding-right: 12%;
+
+        @media (min-width: 992px) {
+            padding-right: 0;
+        }
+
+        .product-left-inner {
+            h2 {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                color: $product-text-color;
+                font-size: 15px;
+                padding: 10px 0;
+            }
+
+            .btn-product-download {
+                font-size: 17px;
+                padding: 30px 70px;
+                background-color: $product-btn-bg-color;
+                border-radius: 46px;
+                color: $product-btn-text-color;
+            }
+
+            @media (min-width: 992px) {
+                h2 {
+                    font-size: 50px;
+                }
+
+                p {
+                    font-size: 25px;
+                    padding: 25px 0;
+                }
+
+                .btn-product-download {
+                    margin-top: 19px;
+                }
+            }
+        }
     }
 }
 
