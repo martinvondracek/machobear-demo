@@ -7,3 +7,123 @@ img {
         width: 20%;
     }
 }
+
+$footer-bg-color: #1b1b1b;
+$footer-divider-color: #404040;
+$footer-text-color: #ffffff;
+
+header {
+    .navbar {
+        margin-bottom: 0;
+        height: 120px;
+    }
+}
+
+.team {
+    .image-holder {
+        overflow: hidden;
+        height: 330px;
+
+        img {
+            position: relative;
+        }
+    }
+
+    .image-holder:nth-child(1) {
+        img {
+            width: 250%;
+            top: -281px;
+            left: -278px;
+        }
+    }
+
+    .image-holder:nth-child(2) {
+        img {
+            width: 150%;
+            left: -188px;
+        }
+    }
+
+    .image-holder:nth-child(3) {
+        img {
+            width: 247%;
+            top: -45px;
+            left: -165px;
+        }
+    }
+
+    .image-holder:nth-child(4) {
+        img {
+            width: 145%;
+            left: -99px;
+        }
+    }
+
+    .image-holder:nth-child(5) {
+        img {
+            width: 201%;
+            top: -25px;
+            left: -223px;
+        }
+    }
+}
+
+footer {
+    color: $footer-text-color;
+    padding: 0 90px;
+    background-color: $footer-bg-color;
+
+    a:link, a:visited, a:hover, a:active {
+        color: $footer-text-color;
+    } 
+
+    .footer-holder {
+        .footer-brand {
+            padding: 37px 0;
+            border-bottom: 1px solid $footer-divider-color;
+            font-size: 25px;
+        }
+        
+        .footer-links {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 37px 0;
+
+            .footer-nav-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+
+                a {
+                    padding: 0px 23px;
+                }
+
+                a:first-child {
+                    padding-left: 0;
+                }
+            }
+
+            .footer-social-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+
+                a {
+                    padding: 0px 16px;
+                }
+
+                a:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
