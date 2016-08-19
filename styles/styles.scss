@@ -1,0 +1,9 @@
+img {
+    width: 100%;
+}
+
+.custom-col-md-works {
+    @media (min-width: 768px) {
+        width: 20%;
+    }
+}
