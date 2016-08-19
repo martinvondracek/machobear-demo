@@ -46,11 +46,13 @@ header .navbar {
       margin-top: 19px; } }
 
 .works .works-title {
-  position: relative; }
+  position: relative;
+  background-color: #f4f4f4; }
   .works .works-title h2 {
     text-align: center;
     font-size: 54px;
-    padding: 42px 0; }
+    padding: 42px 0;
+    margin: 0; }
   .works .works-title span {
     font-size: 20px;
     float: right;
@@ -67,27 +69,30 @@ header .navbar {
   padding: 42px 0; }
 .team .image-holder {
   overflow: hidden;
-  height: 330px; }
+  height: 100vw; }
+  @media (min-width: 992px) {
+    .team .image-holder {
+      height: 20vw; } }
   .team .image-holder img {
     position: relative; }
 .team .image-holder:nth-child(1) img {
-  width: 250%;
-  top: -281px;
-  left: -278px; }
+  width: 270%;
+  top: -72%;
+  left: -81%; }
 .team .image-holder:nth-child(2) img {
-  width: 150%;
-  left: -188px; }
+  width: 156%;
+  left: -53%; }
 .team .image-holder:nth-child(3) img {
-  width: 247%;
-  top: -45px;
-  left: -165px; }
+  width: 273%;
+  top: -9%;
+  left: -52%; }
 .team .image-holder:nth-child(4) img {
-  width: 145%;
-  left: -99px; }
+  width: 165%;
+  left: -138px; }
 .team .image-holder:nth-child(5) img {
-  width: 201%;
-  top: -25px;
-  left: -223px; }
+  width: 225%;
+  top: -21px;
+  left: -283px; }
 
 .about {
   color: #ffffff; }
