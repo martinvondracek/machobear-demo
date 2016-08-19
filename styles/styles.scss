@@ -8,6 +8,11 @@ img {
     }
 }
 
+// about
+$about-bg-color: #0889ff;
+$about-text-color: #ffffff;
+
+// footer
 $footer-bg-color: #1b1b1b;
 $footer-divider-color: #404040;
 $footer-text-color: #ffffff;
@@ -68,6 +73,56 @@ header {
     }
 }
 
+.about {
+    color: $about-text-color;
+
+    .about-height {
+        height: 60vw;
+
+        @media (min-width: 768px) {
+            height: 50vw;
+        }
+    }
+
+    .about-left-holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $about-bg-color;
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .btn-contact-us {
+            font-size: 17px;
+            padding: 15px 70px;
+            background-color: $about-bg-color;
+            border-radius: 28px;
+            border: 1px solid white;
+        }
+
+        @media (min-width: 768px) {
+            h2 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+
+            .btn-contact-us {
+                margin-top: 19px;
+            }
+        }
+    }
+}
+
 footer {
     color: $footer-text-color;
     padding: 0 90px;
@@ -97,7 +152,7 @@ footer {
                 display: flex;
 
                 a {
-                    padding: 0px 23px;
+                    padding: 0px 40px;
                 }
 
                 a:first-child {
@@ -112,7 +167,7 @@ footer {
                 display: flex;
 
                 a {
-                    padding: 0px 16px;
+                    padding: 0px 25px;
                 }
 
                 a:last-child {
