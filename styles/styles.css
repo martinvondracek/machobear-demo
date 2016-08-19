@@ -1,14 +1,34 @@
 img {
   width: 100%; }
 
-@media (min-width: 768px) {
-  .custom-col-md-works {
+@media (min-width: 992px) {
+  .custom-col-md-team {
     width: 20%; } }
 
 header .navbar {
   margin-bottom: 0;
   height: 120px; }
 
+.works .works-title {
+  position: relative; }
+  .works .works-title h2 {
+    text-align: center;
+    font-size: 54px;
+    padding: 42px 0; }
+  .works .works-title span {
+    font-size: 20px;
+    float: right;
+    padding-right: 20px; }
+  @media (min-width: 992px) {
+    .works .works-title span {
+      position: absolute;
+      top: 60px;
+      right: 10%; } }
+
+.team .team-title h2 {
+  text-align: center;
+  font-size: 54px;
+  padding: 42px 0; }
 .team .image-holder {
   overflow: hidden;
   height: 330px; }
@@ -37,7 +57,7 @@ header .navbar {
   color: #ffffff; }
   .about .about-height {
     height: 60vw; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .about .about-height {
         height: 50vw; } }
   .about .about-left-holder {
@@ -56,7 +76,7 @@ header .navbar {
       background-color: #0889ff;
       border-radius: 28px;
       border: 1px solid white; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .about .about-left-holder h2 {
         font-size: 50px; }
       .about .about-left-holder p {

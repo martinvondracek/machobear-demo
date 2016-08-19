@@ -2,8 +2,8 @@ img {
     width: 100%;
 }
 
-.custom-col-md-works {
-    @media (min-width: 768px) {
+.custom-col-md-team {
+    @media (min-width: 992px) {
         width: 20%;
     }
 }
@@ -24,7 +24,41 @@ header {
     }
 }
 
+.works {
+    .works-title {
+        position: relative;
+
+        h2 {
+            text-align: center;
+            font-size: 54px;
+            padding: 42px 0;
+        }
+
+        span {
+            font-size: 20px;
+            float: right;
+            padding-right: 20px;
+        }
+
+        @media (min-width: 992px) {
+            span {
+                position: absolute;
+                top: 60px;
+                right: 10%;
+            }
+        }
+    }
+}
+
 .team {
+    .team-title {
+        h2 {
+            text-align: center;
+            font-size: 54px;
+            padding: 42px 0;
+        }
+    }
+
     .image-holder {
         overflow: hidden;
         height: 330px;
@@ -79,7 +113,7 @@ header {
     .about-height {
         height: 60vw;
 
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             height: 50vw;
         }
     }
@@ -107,7 +141,7 @@ header {
             border: 1px solid white;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             h2 {
                 font-size: 50px;
             }
