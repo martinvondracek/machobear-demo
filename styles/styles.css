@@ -1,16 +1,38 @@
-img {
-  width: 100%; }
-
-@media (min-width: 992px) {
-  .custom-col-md-team {
-    width: 20%; } }
-
-header .navbar {
-  margin-bottom: 0;
-  height: 120px; }
+header {
+  z-index: 10000;
+  position: relative; }
+  header .navbar {
+    margin-bottom: 0;
+    height: 53px; }
+    @media (min-width: 992px) {
+      header .navbar {
+        height: 160px; }
+        header .navbar .navbar-header {
+          height: 160px; }
+        header .navbar .navbar-brand {
+          padding-top: 65px;
+          padding-left: 53%;
+          font-size: 39px;
+          color: black; }
+        header .navbar .my-links {
+          padding-top: 59px;
+          font-size: 17px;
+          padding-right: 8%; }
+          header .navbar .my-links li {
+            padding: 0px 30px; }
+            header .navbar .my-links li a:active {
+              color: #eb6662; }
+          header .navbar .my-links li:last-child a {
+            border: 1px solid #eb6662;
+            border-radius: 27px;
+            padding-left: 30px;
+            padding-right: 30px; } }
+    header .navbar .navbar-collapse {
+      background-color: white;
+      min-height: 160px !important; }
 
 .product .product-height {
-  height: 125vw; }
+  height: 150vw; }
   @media (min-width: 992px) {
     .product .product-height {
       height: 50vw; } }
@@ -76,11 +98,11 @@ header .navbar {
   .team .image-holder img {
     position: relative; }
 .team .image-holder:nth-child(1) img {
-  width: 270%;
+  width: 273%;
   top: -72%;
   left: -81%; }
 .team .image-holder:nth-child(2) img {
-  width: 156%;
+  width: 158%;
   left: -53%; }
 .team .image-holder:nth-child(3) img {
   width: 273%;
@@ -97,7 +119,7 @@ header .navbar {
 .about {
   color: #ffffff; }
   .about .about-height {
-    height: 60vw; }
+    height: 77vw; }
     @media (min-width: 992px) {
       .about .about-height {
         height: 50vw; } }
@@ -162,5 +184,12 @@ footer {
 .no-padding {
   padding-left: 0;
   padding-right: 0; }
+
+img {
+  width: 100%; }
+
+@media (min-width: 992px) {
+  .custom-col-md-team {
+    width: 20%; } }
 
 /*# sourceMappingURL=styles.css.map */

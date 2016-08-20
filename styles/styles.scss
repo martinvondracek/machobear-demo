@@ -1,12 +1,9 @@
-img {
-    width: 100%;
-}
+// width of md screan
+$md-min-width: 992px;
 
-.custom-col-md-team {
-    @media (min-width: 992px) {
-        width: 20%;
-    }
-}
+// header
+$header-brand-text-color: black;
+$header-active-color: #eb6662;
 
 // product
 $product-btn-bg-color: #eb6662;
@@ -26,17 +23,63 @@ $footer-divider-color: #404040;
 $footer-text-color: #ffffff;
 
 header {
+    z-index: 10000;
+    position: relative;
+
     .navbar {
         margin-bottom: 0;
-        height: 120px;
+        height: 53px;
+
+        @media (min-width: $md-min-width) {
+            height: 160px;
+
+            .navbar-header {
+                height: 160px;
+            }
+
+            .navbar-brand {
+                padding-top: 65px;
+                padding-left: 53%;
+                font-size: 39px;
+                color: $header-brand-text-color;
+            }
+
+            .my-links {
+                padding-top: 59px;
+                font-size: 17px;
+                padding-right: 8%;
+
+                li {
+                    padding: 0px 30px;
+
+                    a:active {
+                        color: $header-active-color;
+                    }
+                }
+
+                li:last-child {
+                    a {
+                        border: 1px solid $header-active-color;
+                        border-radius: 27px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+
+        .navbar-collapse {
+            background-color: white;
+            min-height: 160px !important;
+        }
     }
 }
 
 .product {
     .product-height {
-        height: 125vw;
+        height: 150vw;
 
-        @media (min-width: 992px) {
+        @media (min-width: $md-min-width) {
             height: 50vw;
         }
     }
@@ -48,7 +91,7 @@ header {
         padding-left: 12%;
         padding-right: 12%;
 
-        @media (min-width: 992px) {
+        @media (min-width: $md-min-width) {
             padding-right: 0;
         }
 
@@ -72,7 +115,7 @@ header {
                 color: $product-btn-text-color;
             }
 
-            @media (min-width: 992px) {
+            @media (min-width: $md-min-width) {
                 h2 {
                     font-size: 50px;
                 }
@@ -108,7 +151,7 @@ header {
             padding-right: 20px;
         }
 
-        @media (min-width: 992px) {
+        @media (min-width: $md-min-width) {
             span {
                 position: absolute;
                 top: 60px;
@@ -131,7 +174,7 @@ header {
         overflow: hidden;
         height: 100vw;
 
-        @media (min-width: 992px) {
+        @media (min-width: $md-min-width) {
             height: 20vw;
         }
 
@@ -142,7 +185,7 @@ header {
 
     .image-holder:nth-child(1) {
         img {
-            width: 270%;
+            width: 273%;
             top: -72%;
             left: -81%;
         }
@@ -150,7 +193,7 @@ header {
 
     .image-holder:nth-child(2) {
         img {
-            width: 156%;
+            width: 158%;
             left: -53%;
         }
     }
@@ -183,9 +226,9 @@ header {
     color: $about-text-color;
 
     .about-height {
-        height: 60vw;
+        height: 77vw;
 
-        @media (min-width: 992px) {
+        @media (min-width: $md-min-width) {
             height: 50vw;
         }
     }
@@ -213,7 +256,7 @@ header {
             border: 1px solid white;
         }
 
-        @media (min-width: 992px) {
+        @media (min-width: $md-min-width) {
             h2 {
                 font-size: 50px;
             }
@@ -287,4 +330,14 @@ footer {
 .no-padding {
     padding-left: 0;
     padding-right: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.custom-col-md-team {
+    @media (min-width: $md-min-width) {
+        width: 20%;
+    }
 }
