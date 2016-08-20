@@ -64,6 +64,12 @@ header {
                         padding-left: 30px;
                         padding-right: 30px;
                     }
+
+                    a:hover {
+                        background-color: $header-active-color;
+                        color: white;
+                        transition-duration: 0.4s;
+                    }
                 }
             }
         }
@@ -113,6 +119,13 @@ header {
                 background-color: $product-btn-bg-color;
                 border-radius: 46px;
                 color: $product-btn-text-color;
+            }
+
+            .btn-product-download:hover {
+                background-color: $product-btn-text-color;
+                color: $product-btn-bg-color;
+                border: 1px solid $product-btn-bg-color;
+                transition-duration: 0.4s;
             }
 
             @media (min-width: $md-min-width) {
@@ -254,6 +267,13 @@ header {
             background-color: $about-bg-color;
             border-radius: 28px;
             border: 1px solid white;
+        }
+
+        .btn-contact-us:hover {
+            background-color: white;
+            border: 1px solid $about-bg-color;
+            color: $about-bg-color;
+            transition-duration: 0.4s;
         }
 
         @media (min-width: $md-min-width) {
