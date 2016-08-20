@@ -35,6 +35,10 @@ header {
       background-color: white;
       min-height: 160px !important; }
 
+.carousel .carousel-caption h3 {
+  font-size: 19px; }
+.carousel .carousel-caption p {
+  font-size: 9px; }
 .carousel .carousel-caption .btn-carousel-explore {
   border-radius: 20px;
   padding: 6px 20px;
