@@ -27,13 +27,41 @@ header {
             border-radius: 27px;
             padding-left: 30px;
             padding-right: 30px; }
-          header .navbar .my-links li:last-child a:hover {
-            background-color: #eb6662;
-            color: white;
-            transition-duration: 0.4s; } }
+            header .navbar .my-links li:last-child a:hover {
+              background-color: #eb6662;
+              color: white;
+              transition-duration: 0.4s; } }
     header .navbar .navbar-collapse {
       background-color: white;
       min-height: 160px !important; }
+
+.carousel .carousel-caption .btn-carousel-explore {
+  border-radius: 20px;
+  padding: 6px 20px;
+  opacity: 0.7; }
+  .carousel .carousel-caption .btn-carousel-explore:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #dddddd;
+    transition-duration: 0.4s; }
+@media (min-width: 768px) {
+  .carousel .carousel-caption {
+    padding-bottom: 19%; }
+    .carousel .carousel-caption h3 {
+      font-size: 50px; }
+    .carousel .carousel-caption p {
+      font-size: 24px;
+      margin: 33px 0; }
+    .carousel .carousel-caption .btn-carousel-explore {
+      font-size: 17px;
+      padding: 15px 70px;
+      border-radius: 28px;
+      opacity: 0.7; }
+      .carousel .carousel-caption .btn-carousel-explore:hover {
+        background-color: white;
+        border: 1px solid white;
+        color: #dddddd;
+        transition-duration: 0.4s; } }
 
 .product .product-height {
   height: 150vw; }
@@ -62,11 +90,11 @@ header {
     background-color: #eb6662;
     border-radius: 46px;
     color: #ffffff; }
-  .product .product-left-holder .product-left-inner .btn-product-download:hover {
-    background-color: #ffffff;
-    color: #eb6662;
-    border: 1px solid #eb6662;
-    transition-duration: 0.4s; }
+    .product .product-left-holder .product-left-inner .btn-product-download:hover {
+      background-color: #ffffff;
+      color: #eb6662;
+      border: 1px solid #eb6662;
+      transition-duration: 0.4s; }
   @media (min-width: 992px) {
     .product .product-left-holder .product-left-inner h2 {
       font-size: 50px; }
@@ -148,11 +176,11 @@ header {
       background-color: #0889ff;
       border-radius: 28px;
       border: 1px solid white; }
-    .about .about-left-holder .btn-contact-us:hover {
-      background-color: white;
-      border: 1px solid #0889ff;
-      color: #0889ff;
-      transition-duration: 0.4s; }
+      .about .about-left-holder .btn-contact-us:hover {
+        background-color: white;
+        border: 1px solid #0889ff;
+        color: #0889ff;
+        transition-duration: 0.4s; }
     @media (min-width: 992px) {
       .about .about-left-holder h2 {
         font-size: 50px; }
