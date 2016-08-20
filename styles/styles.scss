@@ -230,6 +230,7 @@ header {
     }
 
     .image-holder {
+        position: relative;
         overflow: hidden;
         height: 100vw;
 
@@ -239,6 +240,13 @@ header {
 
         img {
             position: relative;
+        }
+
+        .team-img-caption {
+            position: absolute;
+            top: 72%;
+            color: white;
+            left: 10%;
         }
     }
 

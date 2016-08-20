@@ -127,6 +127,7 @@ header {
   font-size: 54px;
   padding: 42px 0; }
 .team .image-holder {
+  position: relative;
   overflow: hidden;
   height: 100vw; }
   @media (min-width: 992px) {
@@ -134,6 +135,11 @@ header {
       height: 20vw; } }
   .team .image-holder img {
     position: relative; }
+  .team .image-holder .team-img-caption {
+    position: absolute;
+    top: 72%;
+    color: white;
+    left: 10%; }
 .team .image-holder:nth-child(1) img {
   width: 273%;
   top: -72%;
